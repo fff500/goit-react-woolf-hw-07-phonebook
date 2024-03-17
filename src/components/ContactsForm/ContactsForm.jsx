@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 
 import { getContacts } from 'store/selectors';
-import { addContact } from 'store/contactsSlice';
+import { addContact } from 'store/operations';
 
 import style from './ContactsForm.module.css';
 

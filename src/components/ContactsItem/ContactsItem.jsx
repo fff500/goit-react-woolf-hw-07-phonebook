@@ -1,16 +1,16 @@
 import { useDispatch } from 'react-redux';
 
-import { deleteContact } from 'store/contactsSlice';
+import { deleteContact } from 'store/operations';
 
 import style from './ContactsItem.module.css';
 
-export const ContactsItem = ({ id, name, number }) => {
+export const ContactsItem = ({ id, name, phone }) => {
   const dispatch = useDispatch();
 
   return (
     <li className={style.item}>
       <span>
-        {name}: {number}
+        {name}: {phone}
       </span>
       <button
         className={style.button}

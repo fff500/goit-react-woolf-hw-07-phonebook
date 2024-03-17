@@ -10,8 +10,8 @@ export const ContactsList = () => {
 
   return (
     <ul>
-      {contactsToShow.map(({ name, number, id }) => {
-        return <ContactsItem key={id} id={id} name={name} number={number} />;
+      {contactsToShow.map(({ name, phone, id }) => {
+        return <ContactsItem key={id} id={id} name={name} phone={phone} />;
       })}
     </ul>
   );
